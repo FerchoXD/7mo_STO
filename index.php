@@ -37,25 +37,25 @@
                     </a>
                 </div>
                 <div class="login-form">
-                    <form>
-                        <div class="form-group">
-                            <label>Usuario</label>
-                            <input type="email" class="form-control" placeholder="Usuario">
+                    <form action="controllers/usuarios.controller.php?opcion=login" method="POST">
+                        <div class="form-floating">
+                            <label for="correo">Usuario</label>
+                            <input type="email" class="form-control" id="correo" name="correo" placeholder="Usuario">
                         </div>
-                        <div class="form-group">
-                            <label>Contraseña</label>
-                            <input type="password" class="form-control" placeholder="Contraseña">
+                        <div class="form-floating">
+                            <label for="contrasena">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Contraseña">
                         </div>
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox"> Recordar usuario
                             </label>
                             <label class="pull-right">
-                                <a href="contrasena.php">¿Olvidó la contraseña?</a>
+                                <a href="recuperar.php">¿Olvidó la contraseña?</a>
                             </label>
 
                         </div>
-                        <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
+                        <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Iniciar Sesión</button>
                         
                     </form>
                 </div>
