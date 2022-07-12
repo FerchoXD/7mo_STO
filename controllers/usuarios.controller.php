@@ -16,6 +16,7 @@
                 $_SESSION['nombre_usuario'] = $info['nombre_usuario'];
                 $_SESSION['apellido_usuario'] = $info['apellido_usuario'];
                 $_SESSION['correo_usuario'] = $info['correo_usuario'];
+                $_SESSION['rol_usuario'] =  $info['fk_id_rol'];
                 header("Location:../views/dashboard");
                 exit();
             } else {
