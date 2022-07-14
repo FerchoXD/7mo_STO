@@ -94,7 +94,7 @@
 
                             <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
 
-                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                            <a class="nav-link" href="#" onclick="cerrar_sesion()"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
 

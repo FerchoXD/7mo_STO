@@ -623,4 +623,5 @@
         });
     </script>
 </body>
+<script src="../../public/js/dashboard.js"></script>
 </html>

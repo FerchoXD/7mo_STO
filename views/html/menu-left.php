@@ -5,10 +5,12 @@
                     <li class="active">
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
-                    <li class="menu-title">UI elements</li><!-- /.menu-title -->
+                    <li class="menu-title">OdontoFer App</li><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Components</a>
-                        <ul class="sub-menu children dropdown-menu">                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
+                        <?php session_start(); if ($_SESSION['rol_usuario'] == 1){ ?>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Usuarios</a>
+                        <ul class="sub-menu children dropdown-menu">                            
+                            <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Buttons</a></li>
                             <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Badges</a></li>
                             <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Tabs</a></li>
 
@@ -20,6 +22,7 @@
                             <li><i class="fa fa-th"></i><a href="ui-grids.html">Grids</a></li>
                             <li><i class="fa fa-file-word-o"></i><a href="ui-typgraphy.html">Typography</a></li>
                         </ul>
+                        <?php } ?>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Tables</a>

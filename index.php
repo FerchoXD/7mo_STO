@@ -38,6 +38,28 @@
                 </div>
                 <div class="login-form">
                     <form action="controllers/usuarios.controller.php?opcion=login" method="POST">
+                        <?php
+                            if (isset($_GET['opcion'])) {
+                                switch ($_GET['opcion']){
+                                    case "1":
+                                        ?>
+                                        <div class="alert alert-danger">
+                                            <strong>Error al Iniciar de Sesión</strong><br>
+                                            Por favor ingrese los datos requeridos.
+                                        </div>
+                                        <?php
+                                        break;
+                                    case "2":
+                                        ?>
+                                        <div class="alert alert-danger">
+                                            <strong>Error al Iniciar de Sesión</strong><br>
+                                            El usuario o la contraseña son incorrectos.
+                                        </div>
+                                        <?php
+                                        break;
+                                }
+                            }
+                        ?>
                         <div class="form-floating">
                             <label for="correo">Usuario</label>
                             <input type="email" class="form-control" id="correo" name="correo" placeholder="Usuario">
@@ -68,6 +90,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
     <script src="public/assets/js/main.js"></script>
+    
 
 </body>
 </html>
